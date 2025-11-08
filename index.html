@@ -155,12 +155,15 @@
   </header>
 
   <section class="hero" id="home">
-    <div class="hero-content fade-in">
-      <h1>Experience Wellness from Within</h1>
-      <p>IV infusion therapy delivers essential nutrients directly to your bloodstream for faster, more effective results.</p>
+  <div class="hero-content fade-in">
+    <h1>Experience Wellness from Within</h1>
+    <p>IV infusion therapy delivers essential nutrients directly to your bloodstream for faster, more effective results.</p>
+    <div style="display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
       <button class="cta-btn" onclick="document.getElementById('packages').scrollIntoView({behavior:'smooth'})">Explore Packages</button>
+      <button class="cta-btn" style="background:#007bff;" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">Book Appointment</button>
     </div>
-  </section>
+  </div>
+</section>
 
   <section id="packages">
     <h2 class="fade-in">Our IV Infusion Packages</h2>
@@ -216,6 +219,21 @@
     </div>
   </section>
 
+  <section id="booking">
+  <h2 class="fade-in">Book an Appointment</h2>
+  <div class="mailing fade-in">
+    <form onsubmit="event.preventDefault(); alert('Thank you! We will contact you shortly to confirm your appointment.');">
+      <input type="text" placeholder="Full Name" required><br>
+      <input type="email" placeholder="Email Address" required><br>
+      <input type="tel" placeholder="Phone Number" required><br>
+      <input type="date" required><br>
+      <textarea placeholder="Preferred Treatment or Notes" style="width:calc(100% - 40px); max-width:400px; height:100px; margin:10px; border-radius:5px; border:1px solid #ccc; padding:10px;"></textarea><br>
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </div>
+</section>
+
+
   <footer>
     <div class="socials">
       <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -241,6 +259,7 @@
 
 </body>
 </html>
+
 
 
 
